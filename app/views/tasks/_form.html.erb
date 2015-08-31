@@ -1,0 +1,5 @@
+<%= form_for([@project, @project.tasks.build]) do |f| %>
+	<%= f.text_field :content, placeholder: "New Task" %>
+	<%= f.submit %><br>
+	<%= f.datetime_select :deadline %>
+<% end %>

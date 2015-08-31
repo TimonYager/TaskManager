@@ -1,0 +1,12 @@
+<% if user_signed_in? %>
+	<div class="queries">
+		<p>
+			2. Get the count of all tasks in each project, order by tasks count descending:<br>
+			<% @projects.each do |project| %>
+				<% project.tasks.count %>
+			<% end %>
+		</p>
+	</div>
+<% else %>
+	You need to be signed in.
+<% end %>

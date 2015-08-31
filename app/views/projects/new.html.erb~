@@ -1,0 +1,7 @@
+<h1 class="project_title">New Project</h1>
+
+<div class="forms">
+	<%= render 'form' %>
+</div>
+
+<%= link_to 'Back', projects_path %>

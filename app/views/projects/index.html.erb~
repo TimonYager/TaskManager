@@ -1,0 +1,11 @@
+<% @projects.each do |project| %>
+	<div class="index_row clearfix">
+		<h2 class="project title"><%= link_to project.title, project %></h2>
+		<p class="project_sub_title"><%= link_to project.description %></p>
+	</div>
+<% end %>
+
+<div class="links">
+	<%= link_to "New Project", new_project_path %>
+</div>
+

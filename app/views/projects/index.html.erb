@@ -1,0 +1,25 @@
+<div class="projects_list">
+
+	<% if user_signed_in? %>
+		<% @projects.each do |project| %>
+		
+			<% if project.user_id == current_user.id %>
+
+				<div class="index_row clearfix">
+					<h2 class="project_title"><%= link_to project.title, project %></h2>
+					<p class="project_sub_title"><%= project.description %></p>
+				</div>
+
+			<% end %>
+
+		<% end %>
+	<% else %>
+		<p class="content">You need to be signed in if you want to create your own projects.</p>
+	<% end %>
+
+</div>
+
+<div class="links">
+	<%= link_to "New Project", new_project_path %> |
+	<%= link_to "Queries", 'pages/queries' %>
+</div>

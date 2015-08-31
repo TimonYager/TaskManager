@@ -1,0 +1,81 @@
+html {
+	background: linear-gradient(to top, #A9F5F2, #CED8F6);
+	background-size: cover;
+	min-height: 100%;
+}
+
+
+.user_auth, .field, .actions {
+	text-align: center;
+	font: 10pt sans-serif;
+}
+
+.projects_list, #tasks_wrapper {
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-bottom: 15px;
+	width: 400px;
+	border: 1px solid blue;
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+	background-color: #A9E2F3;
+	top: 0;
+	right: 0;
+	bottom: 0; 
+	left: 0;
+	margin: auto;	
+	box-shadow: 0 0 15px 2px;
+}
+
+a:link, a:visited {
+	text-decoration: none;
+	color: #084B8A;
+}
+
+.project_title {
+	font: 18pt bold sans-serif;
+	text-align: center;	
+	color: #084B8A;	
+}
+
+.title {
+font: 18pt bold sans-serif;
+	text-align: center;	
+	color: #084B8A;	
+}
+
+.project_sub_title {
+	font: 12pt sans-serif;
+	text-align: center;
+	color: #0B3861;
+}
+
+.content {
+	font: 16pt sans-serif;
+	text-align: center;
+	color: #0B3861;
+}
+
+.task_options {
+	font: 9pt sans-serif;
+	text-align: right;
+	color: #0B3861;
+	padding-bottom: 5px;	
+}
+
+.deadline {
+	font: 9pt sans-serif;
+	text-align: left;
+	color: #0B3861;	
+}
+
+.index_row, .task {
+	border-bottom: 1px solid #8258FA;
+	border-collapse: collapse;
+	border-color: #0080FF;
+}
+
+.links {
+	margin-top: 5px;
+	text-align: center;
+}

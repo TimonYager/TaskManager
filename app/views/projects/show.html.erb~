@@ -1,0 +1,18 @@
+<p id="notice"><%= notice %></p>
+
+<h2 class="project_title"><%= @project.title %></h2>
+<p class="project_sub_title"><%= @project.description %></p>
+
+<div id="tasks_wrapper">
+	<%= render @project.tasks %> <!take from 'tasks/_task.html.erb'>
+	<div id="form">
+		<%= render "tasks/form" %>	<!take from 'tasks/_form.html.erb'>
+	</div>
+</div>
+
+<div class="links">
+	<%= link_to 'Back', projects_path %> |
+	<%= link_to 'Edit', edit_project_path(@project) %> |
+	<%= link_to 'Delete', project_path(@project), method: :delete, data: confirm: {'Are you sure?'} %>
+</div>
+

@@ -1,0 +1,66 @@
+<% if user_signed_in? %>
+	<div class="queries">
+		<p id="query">
+			2. Get the count of all tasks in each project, order by tasks count descending:<br>
+			<ul>
+				<% @query2.each do |query2| %>
+					<li><%= query2 %></li>
+				<% end %>
+			</ul>
+		</p>
+		
+		<p id="query">
+			3. Get the count of all tasks in each project, order by projects names:<br>
+			<ul>
+				<% @query3.each do |query3| %>
+					<li><%= query3 %></li>
+				<% end %>
+			</ul>
+		</p>
+
+		<p id="query">
+			4. Get the tasks for all projects having the name beginning with “N” letter:<br>
+			<ul>
+				<% @query4.each do |query4| %>
+					<li><%= query4 %></li>
+				<% end %>
+			</ul>
+		</p>
+
+		<p id="query">
+			5. Get the list of all projects containing the ‘a’ letter in the middle of the name,<br> 
+			and show the tasks count near each project:<br>
+			<ul>
+				<% @query5.each do |query5| %>
+					<li><%= query5 %></li>
+				<% end %>
+			</ul>
+		</p>
+
+		<p id="query">
+			6. Get the list of tasks with duplicate names, order alphabetically:<br>
+			<ul>
+				<% @query6.each do |query6| %>
+					<li><%= query6 %></li>
+				<% end %>
+			</ul>
+		</p>
+
+		<p id="query">
+			8. Get the list of project names having more than 10 tasks in status ‘completed’,<br> 
+			order by project_id:<br>
+			<ul>
+				<% @query8.each do |query8| %>
+					<li><%= query8 %></li>
+				<% end %>
+			</ul>
+		</p>
+
+	</div>  
+<% else %>
+	You need to be signed in.
+<% end %>
+
+<div class="links">
+	<%= link_to 'Back', projects_path %>
+</div>
